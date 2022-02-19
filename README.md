@@ -29,8 +29,8 @@ $ sudo apt install python3-tk
 ## Installation.
 
 ```bash
-git clone https://github.com/EduardYan/video-converter
-cd video-converter/
+$ git clone https://github.com/EduardYan/video-converter
+$ cd video-converter/
 
 ```
 

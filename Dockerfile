@@ -1,18 +1,28 @@
-FROM alpine:3.15
+FROM python:3.10.2-alpine3.15
 
-# Updating and requireds packages
-RUN apk update && apk add --no-cache x11vnc supervisor openssh-server \ 
-    net-tools xvfb \
-    openbox xterm terminus-font pwgen
+MAINTAINER Daniel Yanes
 
+ADD /apk /apk
 
-# Adding the startup and configuration
-ADD startup.sh /
-ADD supervisord.conf /etc/supervisor/conf.d/
+RUN cp /apk/.abuild/-58b83ac3.rsa.pub /etc/apk/keys
 
-# Running in 5900
+# RUN apk --no-cache --update add /apk/x11vnc-0.9.13-r0.apk
+
+RUN apk --no-cache add xvfb openbox xfce4-terminal x11vnc supervisor sudo \
+  && addgroup alpine \
+  && adduser  -G alpine -s /bin/sh -D alpine \
+  && echo "alpine:alpine" | /usr/sbin/chpasswd \
+  && echo "alpine    ALL=(ALL) ALL" >> /etc/sudoers \
+  && rm -rf /apk /tmp/* /var/cache/apk/*
+
+ADD etc /etc
+
+WORKDIR /home/alpine/
+
+# Port in 5900 for default
 EXPOSE 5900
-WORKDIR /root
 
-# Commands for init in startup.sh
-ENTRYPOINT ["/startup.sh"]
+USER alpine
+
+CMD ["/usr/bin/supervisord","-c","/etc/supervisord.conf"]
+CMD ["python3", "index.py"]

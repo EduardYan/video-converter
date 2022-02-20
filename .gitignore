@@ -6,3 +6,6 @@ __pycache__
 
 # a test with docker
 old.docker
+
+/apk
+/etc

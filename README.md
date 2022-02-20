@@ -4,13 +4,13 @@
 
 ## Dependencies.
 
-**For install the basics dependencies, execute:**
+_For install the basics dependencies, execute:_
 
 ```bash
 $ pip3 install -r requirements.txt
 ```
 
-_This proyect use tkinter for create the interface_
+**This proyect use tkinter for create the interface.**
 
 ### Tkinter Installation.
 

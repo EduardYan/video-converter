@@ -2,6 +2,7 @@ FROM python:3.10.2-alpine3.15
 
 MAINTAINER Daniel Yanes
 
+# Apk directory
 ADD /apk /apk
 
 # Coping keys
@@ -25,12 +26,13 @@ EXPOSE 5900
 
 USER alpine
 
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
-
 # Coping all code
 COPY . .
 
 # Dependencies
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
+# Running the app
 RUN python3 index.py
+
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]

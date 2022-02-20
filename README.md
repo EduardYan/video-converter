@@ -1,17 +1,17 @@
-# Video Converter.
+# Video Converter ![logo](./icons/logo.png)
 
-
-__Video Converter is a application for conveter videos(mp4) to audio(mp3). With a util interface to use.__
-
+**Video Converter is a application for conveter videos(mp4) to audio(mp3). With a util interface to use.**
 
 ## Dependencies.
 
-__For install the basics dependencies, execute:__
+**For install the basics dependencies, execute:**
+
 ```bash
 $ pip3 install -r requirements.txt
 ```
 
-__This proyect use tkinter for create the interface.__
+_This proyect use tkinter for create the interface_
+
 ### Tkinter Installation.
 
 #### Windows
@@ -21,10 +21,10 @@ __This proyect use tkinter for create the interface.__
 ```
 
 #### Linux Debian/Ubuntu.
+
 ```bash
 $ sudo apt install python3-tk
 ```
-
 
 ## Installation.
 
@@ -36,22 +36,22 @@ $ cd video-converter/
 
 ## Run.
 
-__Only execute the file index.py__
+**Only execute the file index.py**
 
 ```bash
 $ python3 index.py
 ```
 
-__or__
+**or**
 
 ```bash
 $ ./index.py
 ```
 
-
 ## Screenshot
+
 ![screenshot](./doc/screenshot.png)
 
-
 ## Bugs or Problems.
+
 <a href="mailto:eduarygp@gmail.ocm">Contact Me.</a>

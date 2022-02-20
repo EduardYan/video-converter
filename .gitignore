@@ -3,3 +3,6 @@
 
 # cache generated from python
 __pycache__
+
+# a test with docker
+old.docker

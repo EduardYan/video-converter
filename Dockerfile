@@ -9,7 +9,7 @@ ADD /apk /apk
 RUN cp /apk/.abuild/-58b83ac3.rsa.pub /etc/apk/keys
 
 RUN apk --no-cache add xvfb openbox xfce4-terminal x11vnc supervisor \ 
-  sudo python3-tkinter musl-dev linux-headers g++ build-base \
+  sudo python3-tkinter musl-dev zlib py3-numpy linux-headers g++ make gcc build-base \
   && addgroup alpine \
   && adduser  -G alpine -s /bin/sh -D alpine \
   && echo "alpine:alpine" | /usr/sbin/chpasswd \

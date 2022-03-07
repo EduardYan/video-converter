@@ -30,7 +30,7 @@ USER root
 COPY . .
 
 RUN cd libs/moviepy \
-    && mv * /usr/lib/python3.9
+    && sudo mv * /usr/lib/python3.9
 
 # Dependencies
 # RUN pip install --upgrade pip && pip install -r requirements.txt

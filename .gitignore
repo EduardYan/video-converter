@@ -4,8 +4,5 @@
 # cache generated from python
 __pycache__
 
-# a test with docker
-old.docker
-
-# libs
-/libs
+# lib of moviepy
+/build/libs/moviepy

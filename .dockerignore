@@ -1,1 +1,5 @@
-old.docker
+# Ignore the documentation
+README.md
+
+# Ignore the gitignore
+.gitignore

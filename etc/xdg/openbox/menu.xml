@@ -13,7 +13,7 @@
 
   <separator />
 
-  <item label="xterm">
+  <item label="Terminal">
     <action name="Execute"><execute>/usr/bin/xfce4-terminal</execute></action>
   </item>
   <separator />

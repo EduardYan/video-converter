@@ -3,3 +3,6 @@ README.md
 
 # Ignore the gitignore
 .gitignore
+
+# Ignore the tests directory
+tests

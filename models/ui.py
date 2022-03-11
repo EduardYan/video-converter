@@ -16,7 +16,7 @@ from tkinter import (
 )
 from tkinter.filedialog import askopenfilename, asksaveasfilename
 from moviepy.editor import VideoFileClip
-from utils.config import get_config_object
+from utils.config import CONFIG
 from utils.video import validate_file_extension, get_extension
 from utils.reset import clear_entry
 from errors.path import InvalidPath
@@ -27,7 +27,7 @@ from os import environ
 
 
 # getting values to config
-NAME = get_config_object()['name']
+NAME = CONFIG['NAME']
 
 
 class UI:

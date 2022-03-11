@@ -8,6 +8,9 @@ ADD /build/apk /apk
 # Coping keys
 RUN cp /apk/.abuild/-58b83ac3.rsa.pub /etc/apk/keys
 
+RUN pip install --upgrade pip \
+    && pip install cython
+
 RUN apk --no-cache add xvfb openbox terminus-font xfce4-terminal x11vnc supervisor \ 
   sudo cython python3-tkinter musl-dev zlib py3-numpy linux-headers g++ make gcc build-base \
   && addgroup alpine \
@@ -24,19 +27,21 @@ ADD /build/etc /etc
 EXPOSE 5900
 
 WORKDIR /home/alpine/video-converter
+
 # Coping all code
 COPY . .
 
-USER root
-
+# Coping the libs for moviepy
 RUN cd build/libs/moviepy \
     && mv * /usr/lib/python3.9
 
+USER root
+
 # Dependencies
 # RUN pip install --upgrade pip && pip install -r requirements.txt
-RUN pip install --upgrade pip
 
 # Running the app
 # RUN python3 index.py
+
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]

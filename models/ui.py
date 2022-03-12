@@ -215,18 +215,29 @@ class UI:
         widget.
         """
 
-        # directory for get in browser
-        VIDEOS_DIR = environ['XDG_VIDEOS_DIR']
+        try:
+            # directory for get in browser
+            VIDEOS_DIR = environ['XDG_VIDEOS_DIR']
 
-        # getting the path
-        path = askopenfilename(
-            initialdir = VIDEOS_DIR,
-            # only mp4
-            filetypes = (
-                ('Videos mp4', '*.mp4'),
-                ('All', '*.*')
+            # getting the path
+            path = askopenfilename(
+                initialdir = VIDEOS_DIR,
+                # only mp4
+                filetypes = (
+                    ('Videos mp4', '*.mp4'),
+                    ('All', '*.*')
+                )
             )
-        )
+
+        # getting the path if the key not is valid
+        except KeyError:
+            path = askopenfilename(
+                # only mp4
+                filetypes = (
+                    ('Videos mp4', '*.mp4'),
+                    ('All', '*.*')
+                )
+            )
 
         try:
             # showing in entry

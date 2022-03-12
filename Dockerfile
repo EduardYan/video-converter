@@ -41,6 +41,6 @@ USER root
 # Cleaning build files
 RUN rm -rf build
 
-# RUN python3 index.py
+# RUN python3.9 index.py
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]

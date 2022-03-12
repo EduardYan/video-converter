@@ -24,8 +24,7 @@ $ app
 
 
 
-
-## Dependencies.
+## Dependencies (only use for manual installation).
 
 _For install the basics dependencies, execute:_
 

@@ -10,7 +10,7 @@
 $ docker run -d -p 5900:5900 --name video-app eduarddan/video-converter-app
 ```
 
-**Now that we have an instance of the image . We can access it because in the image we use a vnc server to be able to see the application graphically.** Using [VNC Viewer](https://www.realvnc.com/es/connect/download/viewer/) in Windows or other platforms.
+**Now that we have an instance of the image . We can access it because in the image we use a vnc server to be able to see the application graphically.** **Using [VNC Viewer](https://www.realvnc.com/es/connect/download/viewer/) in Windows or other platforms.**
 
 **Once you have created a connection in vnc viewer you can execute the app, open the terminal and executing the command:**
 
@@ -75,4 +75,4 @@ $ ./index.py
 
 ## Bugs or Problems.
 
-<a href="mailto:eduarygp@gmail.ocm">Contact Me.</a>
+<a href="mailto:eduarygp@gmail.com" target="_blank" rel="noreferrer">Contact Me.</a>

@@ -44,7 +44,7 @@ $ pip3 install -r requirements.txt
 #### Linux Debian/Ubuntu.
 
 ```bash
-$ sudo apt install python3-tk
+$ sudo apt install python3-tk -y
 ```
 
 ## Installation.

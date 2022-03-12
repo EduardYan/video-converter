@@ -1,1 +1,1 @@
-There are some packages and libs to build the docker image
+There are some scripts, packages and libs to build the docker image

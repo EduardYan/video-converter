@@ -32,15 +32,15 @@ WORKDIR /home/alpine/video-converter
 # Coping all code
 COPY . .
 
+USER root
+
 # Coping the libs for moviepy
 RUN cd build/libs/moviepy \
-    && mv * /usr/lib/python3.9
+    && mv * /usr/lib/python3.9/site-packages \
+    && cd ../../ && chmod 777 app && mv app /usr/bin
 
-USER root
 
 # Cleaning build files
 RUN rm -rf build
-
-# RUN python3.9 index.py
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]

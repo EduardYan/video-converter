@@ -1,0 +1,8 @@
+# This is a script for execute the
+# video converter app
+
+
+cd /home/alpine/video-converter/
+
+# running
+python3.9 index.py

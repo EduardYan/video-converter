@@ -20,7 +20,7 @@ $ app
 
 ### Images.
 ![open-terminal-image](./doc/open-terminal-image.png)
-![execute-app-img](./doc/execute-app.png)
+![execute-app-image](./doc/execute-app-image.png)
 
 
 

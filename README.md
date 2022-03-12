@@ -2,6 +2,29 @@
 
 **Video Converter is a application for conveter videos(mp4) to audio(mp3). With a util interface to use.**
 
+## Docker Installation (Recommended)
+
+__Install from docker image, and run a container.__
+
+```bash
+$ docker run -d -p 5900:5900 --name video-app eduarddan/video-converter-app
+```
+
+__Now that we have an instance of the image . We can access it because in the image we use a vnc server to be able to see the application graphically.__ Using [VNC Viewer](https://www.realvnc.com/es/connect/download/viewer/) in Windows or other platforms.
+
+__Once you have created a connection in vnc viewer you can execute the app, open the terminal and executing the command:__
+
+```bash
+$ app
+```
+
+### Images.
+[open-terminal-image](./doc/open-terminal-image.png)
+[execute-app-img](./doc/execute-app.png)
+
+
+
+
 ## Dependencies.
 
 _For install the basics dependencies, execute:_

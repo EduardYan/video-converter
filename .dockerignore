@@ -1,8 +1,9 @@
 # Ignore the documentation
 README.md
+/doc
 
 # Ignore the gitignore
 .gitignore
 
 # Ignore the tests directory
-tests
+/tests

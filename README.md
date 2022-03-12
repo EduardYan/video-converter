@@ -1,6 +1,6 @@
 # Video Converter ![logo](./icons/logo.png)
 
-**Video Converter is a application for conveter videos(mp4) to audio(mp3). With a util interface to use.**
+**Video Converter is a application for conveter videos(mp4) to audio(mp3). With a util interface to use. Using tkinter module from python3.**
 
 ## Docker Installation (Recommended)
 

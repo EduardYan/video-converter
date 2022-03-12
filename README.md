@@ -19,8 +19,8 @@ $ app
 ```
 
 ### Images.
-[open-terminal-image](./doc/open-terminal-image.png)
-[execute-app-img](./doc/execute-app.png)
+![open-terminal-image](./doc/open-terminal-image.png)
+![execute-app-img](./doc/execute-app.png)
 
 
 
